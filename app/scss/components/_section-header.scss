@@ -1,0 +1,46 @@
+.section-header {
+  position: relative;
+  height: 440px;
+  @include respond-to('medium') {
+    height: 195px;
+  }
+}
+
+.section-header__title {
+  position: relative;
+  padding-top: 5.6em;
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  z-index: $zIndex-1;
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 1px;
+    margin-right: 12px;
+    content: "";
+    background: white;
+    @include respond-to('medium') {
+      visibility: hidden;
+    }
+  }
+  @include respond-to('medium') {
+    padding-top: 3.6em;
+  }
+}
+
+.section-header__banner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+}
+
+.section-header__banner--other {
+  background-color: $mid-grey;
+}

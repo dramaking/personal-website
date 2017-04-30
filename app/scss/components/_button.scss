@@ -1,3 +1,49 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: $text-color;
+  cursor: pointer;
+  padding-right: 1.375rem;
+  transition: padding 0.3s cubic-bezier(0.77,0,0.175,1);
+  &:hover {
+    padding-left: 1em;
+    &:before {
+      width: 1rem;
+      right: -0.2rem;
+    }
+    &:after {
+      right: -0.4rem;
+    }
+  }
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 45%;
+    right: 0.2rem;
+    width: 0.6rem;
+    height: 0.125rem;
+    background-color: $text-color;
+    transition: width 0.3s cubic-bezier(0.77,0,0.175,1),
+                right 0.3s cubic-bezier(0.77,0,0.175,1);
+  }
+  &:after {
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    content: '';
+    margin-top: -0.2rem;
+    border-top: 0.3rem dashed transparent;
+    border-bottom: 0.3rem dashed transparent;
+    border-left: 0.3rem solid white;
+    border-left-color: $text-color;
+    transition: right 0.3s cubic-bezier(0.77,0,0.175,1);
+  }
+}

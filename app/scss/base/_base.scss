@@ -23,11 +23,42 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $primary-color;
   text-decoration: none;
-
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
+    //text-decoration: underline;
   }
 }
+
+/**
+ * Set the base font size
+ */
+html, body {
+ font-size: 15px;
+ font-family: $regular-font;
+}
+
+/**
+ * Set the title font size
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+
+ /**
+ * Set the padding for ul to 0
+ */
+ul {
+  padding: 0;
+}
+
+
+
+
+
+
+
+

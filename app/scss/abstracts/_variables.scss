@@ -6,9 +6,13 @@
 
 
 
-/// Regular font family
+/// Heading font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$heading-font: 'Titillium Web', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Regulat font family
+/// @type List
+$regular-font: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -20,23 +24,36 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: rgb(29, 29, 29) !default;
+
+/// Secondary text color
+/// @type Color
+$text-secondary-color: rgb(60, 60, 59) !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+//$primary-color: rgb(56, 174, 114) !default;
+$primary-color: rgb(0,191,129) !default;
+
+/// Warning color
+/// @type Color
+$warning-color: rgb(255, 217, 74) !default;
+
+/// Complimentary color
+/// @type Color
+$complimentary-color: rgb(0, 54, 122) !default;
 
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: rgb(245, 245, 245) !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+$mid-grey: rgb(156, 155, 155) !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: rgb(111, 111, 110) !default;
 
 
 
@@ -54,9 +71,10 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': (min-width: 320px),
-  'medium': (min-width: 768px),
-  'large': (min-width: 1024px),
+  'small': (max-width: 320px),
+  'sm': (max-width: 548px),
+  'medium': (max-width: 768px),
+  'large': (max-width: 1024px),
 ) !default;
 
 

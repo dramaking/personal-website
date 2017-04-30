@@ -1,3 +1,55 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.h-intro {
+  background-image: url('../../images/general/bg-jenny.jpg');
+  background-size: cover;
+  //background-color: #1b1a25;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: 60em;
+  margin: 0 auto;
+  @include respond-to('medium') {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.intro__content {
+  margin-top: 7em;
+  margin-left: 1.5em;
+  line-height: 1.8em;
+  color: $mid-grey;
+  @include respond-to('medium') {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+}
+
+.intro__content__heading {
+  font-family: $heading-font;
+  font-size: 1.3em;
+  color: $light-grey;
+  padding-right: 0.5em;
+}
+
+.whoiam {
+  background-color: $text-color;
+  padding-bottom: 4em;
+}
+
+.container--whoiam {
+  padding: 0 16em;
+  @include respond-to('large') {
+    padding: 0 8em;
+  }
+  @include respond-to('medium') {
+    padding: 0 1em;
+  }
+}

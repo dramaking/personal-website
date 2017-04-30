@@ -1,0 +1,32 @@
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  @include respond-to('large') {
+    padding: 0;
+  }
+}
+
+.img-item {
+  position: relative;
+  width: 25%;
+  cursor: pointer;
+  figure {
+    margin: 0;
+  }
+  @include respond-to('large') {
+    width: 33.333%;
+  }
+  @include respond-to('sm') {
+    width: 50%;
+  }
+}
+
+.img-info {
+  color: white;
+  z-index: $zIndex-1;
+  padding: 2em 0 0 1em;
+  font-weight: 300;
+  visibility: hidden;
+  opacity: 0;
+}
