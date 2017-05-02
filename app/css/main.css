@@ -1109,7 +1109,8 @@ h2.project__intro__title {
 
 .project__info__item__content {
   font-size: 1.1em;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.8em; }
 
 .project__info__hashtag {
   margin-top: 4em;
@@ -1177,6 +1178,12 @@ h2.project__intro__title {
   @media (max-width: 768px) {
     .project__3column__photo {
       margin: 1em 0; } }
+
+.project__3column__photo--one {
+  max-width: none; }
+
+.project__3column__photo--limited {
+  max-width: 50em; }
 
 .project__desktop {
   padding-top: 5em; }
