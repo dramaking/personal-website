@@ -58,7 +58,7 @@ gulp.task('watch', () => {
 
 // Concatenate CSS and js files into a single file
 gulp.task('useref', () => {
-  return gulp.src('app/*.html')
+  return gulp.src('app/**/*.html')
     .pipe(useref())
     // Minifies only if it is a JavaScript file
     .pipe(gulpIf('*.js', uglify()))
@@ -69,7 +69,7 @@ gulp.task('useref', () => {
 
 // Optimize the images
 gulp.task('images', () => {
-  return gulp.src('app/images/**/*.+(png|jpg|gif|svg')
+  return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true

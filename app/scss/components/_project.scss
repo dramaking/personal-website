@@ -7,6 +7,11 @@
   }
 }
 
+.project__intro__container {
+  visibility: hidden;
+  opacity: 0;
+}
+
 h2.project__intro__title {
   font-size: 2.1em;
   font-weight: 400;
@@ -29,6 +34,8 @@ h2.project__intro__title {
 .project__info__wrapper {
   padding-top: 5em;
   padding-bottom: 4em;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .project__info__items {

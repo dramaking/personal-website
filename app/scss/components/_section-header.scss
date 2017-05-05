@@ -25,6 +25,7 @@
     background: white;
     @include respond-to('medium') {
       visibility: hidden;
+      width: 0;
     }
   }
   @include respond-to('medium') {

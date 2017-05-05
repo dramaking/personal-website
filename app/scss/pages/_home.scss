@@ -2,9 +2,9 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .h-intro {
-  background-image: url('../../images/general/bg-jenny.jpg');
+  //background-image: url('../images/general/bg-jenny.jpg');
   background-size: cover;
-  //background-color: #1b1a25;
+  background-color: #1b1a25;
 }
 
 .intro {
@@ -40,8 +40,11 @@
 }
 
 .whoiam {
-  background-color: $text-color;
+  background-color: #1b1a25;
   padding-bottom: 4em;
+  @include respond-to('medium') {
+    padding-bottom: 0;
+  }
 }
 
 .container--whoiam {

@@ -49,5 +49,9 @@
   opacity: 0;
   visibility: hidden;
   content: '';
+  @include respond-to('medium') {
+    visibility: visible;
+    opacity: 0.4;
+  }
 }
 
