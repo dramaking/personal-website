@@ -545,6 +545,9 @@ body {
               justify-content: center;
       padding: 2em 0; } }
 
+.footer__logo img {
+  width: 59px; }
+
 .footer__link a {
   color: #1d1d1d;
   font-size: 11px;
@@ -1073,7 +1076,6 @@ ul.navbar__menu__share__list li {
 .img-info {
   color: white;
   z-index: 100;
-  padding: 2em 0 0 1em;
   font-weight: 300;
   visibility: hidden;
   opacity: 0; }
@@ -1402,6 +1404,9 @@ h2.project__intro__title {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+
+.intro__heading img {
+  width: 278px; }
 
 .intro__content {
   margin-top: 7em;
