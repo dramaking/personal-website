@@ -83,6 +83,12 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts'))
 });
 
+// Copying favicon to dist
+gulp.task('favicon', () => {
+  return gulp.src('app/favicon.ico')
+    .pipe(gulp.dest('dist'))
+});
+
 // Cleaning the dist folder
 gulp.task('clean:dist', () => {
   return del.sync('dist');
@@ -97,7 +103,7 @@ gulp.task('build', (callback) => {
   runSequence(
     'clean:dist',
     'sass',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'favicon'],
     callback
   )
 })
