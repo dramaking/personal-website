@@ -163,7 +163,8 @@
   }
 
   $('.backTop').on('click', function () {
-    $(document.body).animate({scrollTop: 0}, 800);
+    console.log('click');
+    $('html,body').animate({scrollTop: 0}, 800);
   });
 
   /// ScrollReveal
