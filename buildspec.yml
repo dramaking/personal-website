@@ -2,6 +2,10 @@ version: 0.1
 phases:
     install:
         commands:
-        - yarn
-        - yarn gulp build
-        - aws s3 sync dist s3://zichengwang.com --delete
+            - yarn
+    build:
+        commands:
+            - yarn gulp build
+    post_build:
+        commands:
+            - aws s3 sync dist s3://zichengwang.com --delete
